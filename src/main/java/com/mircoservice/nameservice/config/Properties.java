@@ -3,11 +3,13 @@ package com.mircoservice.nameservice.config;
 import java.util.List;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties("config")
+@ConfigurationProperties(prefix = "config")
+@EnableConfigurationProperties
 @RefreshScope
 public class Properties {
 
