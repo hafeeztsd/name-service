@@ -14,9 +14,11 @@ public class NameController {
 
 	@Autowired
 	Properties properties;
-	
+
 	@RequestMapping(method = RequestMethod.GET, path = "/name")
 	public String getName() {
-		return properties.getNames().get(new Random().nextInt(properties.getNames().size() - 1));
+		int index = new Random().nextInt(properties.getNames().size());
+		index = index > 0 ? --index : index;
+		return properties.getNames().get(index);
 	}
 }
