@@ -1,0 +1,18 @@
+= Name Service API Documentation
+
+This is an example output for a service running at http://localhost:8080:
+
+.request
+include::{snippets}/name/http-request.adoc[]
+
+.response
+include::{snippets}/name/http-response.adoc[]
+
+.curl-request
+include::{snippets}/names/curl-request.adoc[]
+
+.request-body
+include::{snippets}/names/request-body.adoc[]
+
+.response-body
+include::{snippets}/names/response-body.adoc[]

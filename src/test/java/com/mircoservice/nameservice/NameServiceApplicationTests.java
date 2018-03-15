@@ -23,7 +23,7 @@ import com.mircoservice.nameservice.web.NameController;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(NameController.class)
-@AutoConfigureRestDocs
+@AutoConfigureRestDocs(outputDir="target/snippets")
 public class NameServiceApplicationTests {
 
 	@Autowired
